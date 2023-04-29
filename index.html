@@ -1,0 +1,213 @@
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title> Portfolio Web </title>
+	<script src="https://kit.fontawesome.com/c4254e24a8.js" ></script> 
+</head>
+<body>
+	<nav class="nav">
+	    <div class="container1">
+			<h1 class="nombre"><span class="nombre-primario">Elvin-Dev</span><span class="nombre-secundario">
+				Web Developer</span></h1>
+			<ul id="sidemenu">
+				<li class="test"> <a href="#">         Home     </a></li>
+				<li class="test"> <a href="#about">    About    </a></li>
+				<li class="test"> <a href="#services"> Services </a></li>
+				<li class="test"> <a href="#portfolio">Portfolio</a></li>
+				<li class="test"> <a href="#contact">  Contact  </a></li>
+				<i class="fas fa-times" onclick="closemenu()"></i> 
+			</ul>
+			<i class="fas fa-bars" onclick="openmenu()"></i>
+		</div>
+	</nav>
+	<header id="header">
+		<div class="container">
+			<div class="text-pres">
+				<h3> Hey, I'm <span> Elvin </span> </h3> <br />
+                <h4> Welcome to my online portfolio. On this site, you'll find a sample of <br>
+					my work as a Front End Jr developer. I hope you enjoy it!
+				</h4>
+			</div>
+		</div>
+	</header >
+	<div id="about">
+		<div class="container">
+			<div class="row">
+				<div class="about-1">
+					 <img alt="A picture of myself sitting at my desk coding" src="images/cooper-2-removebg.png"> 
+				</div>
+				<div class="about-2">
+					<h1 class="about-me">  About <span>Me</span> </h1>
+					<h3> Aqui dentro ira informacion a cerca de mi 
+						experiencia como desarrollador a medida   
+						que voy adquiriendo nuevos conocimentos 
+						y mejorando los que tengo! un poco mas 
+						de texo	para ver los camnbios efectuados.</h3> 
+					<div class="tab-titles">				
+						<p class="tablinks active-link" onclick="opentab(event, 'skills')">Skills </p>
+						<p class="tablinks active-link" onclick="opentab(event, 'experience')"	>Experience </p>
+  						<p class="tablinks active-link" onclick="opentab(event, 'education')"	>Education  </p>
+					</div> 
+					<div class="tab_contents active-tab" id="skills">
+						<ul>
+							<li> Front End <br /><span class="span">HTML </span></li>
+							<li> Front End <br/><span class="span"> CSS Design</span> </li>
+							<li> Front End <br /><span class="span"> Java Script  </span>  </li>
+						</ul>
+					</div>	
+					<div class="tab_contents" id="experience">	
+						<ul>
+							<li>  segundo <br /><span class="span">Web Sites and Apps </span></li>
+							<li>  segundo <br /> <span class="span">Forms, Reports    </span></li>
+							<li>  segundo <br /><span class="span">Apps Developments </span></li>
+						</ul>
+					</div>
+					<div class="tab_contents" id="education">
+						<ul>
+							<li> tercer contenido <br /><span class="span">System Engineer</span></li>
+							<li> tercer contenido <br/><span class="span"> System Engineer </span> </li>
+							<li> tercer contenido <br /><span class="span"> Apps Developments </span>  </li>
+						</ul>
+					</div>	
+				</div>	
+			</div>							 				
+		</div>
+	</div>
+    <!------------My Services------------------->
+	<div id="services">
+		<div class="container">
+		  <h1>My Services</h1>
+		  <div class="service-list">
+			<div class="service-item_1">
+			  <i class="fas fa-code"></i>
+			  <h2>Web Development</h2>
+			  <p>En esta sección encontrarás información sobre los servicios de desarrollo web que ofrezco.</p>
+			  <a href="#">Learn more...</a>
+			</div>
+			<div class="service-item_2">
+			  <i class="fas fa-crop-alt"></i>
+			  <h2>Web Development</h2>
+			  <p>En esta sección encontrarás información sobre los servicios de diseño gráfico que ofrezco.</p>
+			  <a href="#">Learn more...</a>
+			</div>
+			<div class="service-item_3">
+			  <i class="fas fa-laptop-code"></i>
+			  <h2>Web Development</h2>
+			  <p>En esta sección encontrarás información sobre los servicios de desarrollo de software que ofrezco.</p>
+			  <a href="#">Learn more...</a>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	<!------------Portfolio------------------->
+	<div id="portfolio">
+		<div class="container">
+		  <h1 class="sub-title">My Work</h1>
+		  <ul class="work-list">
+			<li class="work">
+			  <figure>
+				<img src="images/comercio-online-mcommerce.jpg" alt="proyect-1">
+				<figcaption>
+				  <h3>Project Car Shop</h3>
+				  <p>Descripción de cada proyecto por separado.</p>
+				  <a href="#" rel="noopener"><i class="fas fa-external-link-alt"></i></a>
+				</figcaption>
+			  </figure>
+			</li>
+			<li class="work">
+			  <figure>
+				<img src="images/portfolio-digital.jpg" alt="proyect-1">
+				<figcaption>
+				  <h3>Project Portfolio</h3>
+				  <p>Descripción de cada proyecto por separado.</p>
+				  <a href="#" rel="noopener"><i class="fas fa-external-link-alt"></i></a>
+				</figcaption>
+			  </figure>
+			</li>
+			<li class="work">
+			  <figure>
+				<img src="images/social-media.jpg" alt="proyect-1">
+				<figcaption>
+				  <h3>Social Media</h3>
+				  <p>Descripción de cada proyecto por separado.</p>
+				  <a href="#" rel="noopener"><i class="fas fa-external-link-alt"></i></a>
+				</figcaption>
+			  </figure>
+			</li>
+		  </ul>
+		  <a href="#" class="btn">See more...</a>
+		</div>
+	  </div>
+	<!------------Contact------------------->
+    <section id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="contact-info"> 
+					<h1> Contact Me</h1>
+					<p><i class="fas fa-paper-plane"> </i> ing.elvin01cooper@gmail.com</p>
+					<p><i class="fas fa-phone-square-alt"> </i> 1+809-250-1339</p>
+					<div class="socials-icons">
+						<a href="https://www.facebook.com/Prospecto001" target="_blank"> <i class="fab fa-facebook"> </i> </a>
+						<a href="https://twitter.com/Ing_ElvinCooper" target="_blank"><i class="fab fa-twitter-square"> </i> </a>
+						<a href="https://www.instagram.com/ing.elvin_cooper/" target="_blank"><i class="fab fa-instagram"> </i> </a>
+						<a href="https://www.linkedin.com/in/elvin-cooper-8a5647b6/" target="_blank"><i class="fab fa-linkedin"> </i> </a>
+					</div>
+					<a href="images/CV actualizado...pdf" download target="blank" class="btn btn2"> Download CV </a>
+				</div>
+				<div class="contact-right">
+					<form action="https://formsubmit.co/ing.elvin01cooper@gmail.com" method="POST">
+						<div class="form-group">
+							<input type="text" name="Name" class="form-control" placeholder="your Name" required>
+						</div>	
+						<div class="form-group">
+							<input type="email" name="Email" class="form-control" placeholder="your email" required>
+						</div>	
+						<div class="form-group">
+							<textarea name="Message" class="form-control" rows="6" placeholder="your message"></textarea>
+						</div>	
+						<button type="submit" class="btn btn2">Summit</button>
+						<input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+						<input type="hidden" name="_captcha" value="false">
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<p>Copyright ©Elvin Cooper Software Dev</p>
+		</div>
+	</section>  
+	<script>
+		function opentab (evt, tabname){
+			//declarando las variables
+			var i, tabcontent, tablink;
+			//obteniendo todos los elementos con la clase tabcontent y ocultandolos
+			tabcontent = document.querySelectorAll('.tab_contents');
+			for (i = 0; i <tabcontent.length; i++){
+				tabcontent[i].style.display = 'none';
+			}
+			//obteniendo todos los elementos con la clase tablinks y removiendo la clase active.
+			tablinks = document.querySelectorAll('.tablinks');
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace('active', '');
+			}
+			// mostrar la pestana en cuestion y agregando una clase active a la opcion que abrio la pestana.
+			document.querySelector('#'+tabname).style.display = 'block';
+			evt.currentTarget.className += 'active';
+		}
+	</script>
+	<script>
+		var sidemenu = document.getElementById('sidemenu');
+		var sidemenu2 = document.querySelectorAll('.test');
+		function openmenu(){
+			sidemenu.style.right = '0';
+		}
+		function closemenu(){
+			sidemenu.style.right = '-200px';
+		}
+	</script>
+</body>
+</html>
